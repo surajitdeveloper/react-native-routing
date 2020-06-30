@@ -1,5 +1,6 @@
-import React, {Component} from 'react';  
-import {Platform, StyleSheet, Text, View, TouchableHighlight} from 'react-native';  
+import React, { Component } from 'react';  
+import { Platform, StyleSheet, Text, View, TouchableHighlight } from 'react-native';  
+import Nav from './Nav';
   
  
 export default class App extends React.Component {  
@@ -9,6 +10,7 @@ export default class App extends React.Component {
         <Text style={styles.welcome}>Landing</Text>
         <TouchableHighlight
           style={styles.submit}
+          onPress={()=>this.props.navigation.navigate('Home')}
           underlayColor='#fff'>
             <Text style={styles.submitText}>Go to Home</Text>
         </TouchableHighlight>
