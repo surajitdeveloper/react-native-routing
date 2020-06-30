@@ -4,5 +4,6 @@ import App from './App'
 
 const Nav = createStackNavigator({
   Home: { screen: Home },
+  Landing: {screen: App}
 
 });
